@@ -1,7 +1,7 @@
 # supreme-succotash
-Code from the Inheritance Sectioon of the Real Python article on Inheritance and Composition in dataclass syntax 
+# Code from the Inheritance Sectioon of the Real Python article on Inheritance and Composition in dataclass syntax # 
 
-The sections Creating Class Hierarchies through the Class Explosion Problem are repsented by the following files:
+## The sections Creating Class Hierarchies through the Class Explosion Problem are repsented by the following files: ##
 
 original_employees_dataclass.py
 original_hr_dataclass.py
