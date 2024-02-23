@@ -1,40 +1,46 @@
+"""HR Employees classes"""
+
 from dataclasses import dataclass
 
-from modified_hr_dataclass import (
-    SalaryPolicy,
-    CommissionPolicy,
-    HourlyPolicy
-)
+from modified_hr_dataclass import SalaryPolicy, CommissionPolicy, HourlyPolicy
 
 from modified_productivity_dataclass import (
     ManagerRole,
     SecretaryRole,
     SalesRole,
-    FactoryRole
+    FactoryRole,
 )
 
-@dataclass 
+
+@dataclass
 class Employee:
+    """Employee class"""
+
     __slots__ = ["id", "name"]
     id: int
     name: str
 
+
 @dataclass
 class Manager(Employee, ManagerRole, SalaryPolicy):
-    pass
+    """Manager class"""
+
 
 @dataclass
 class Secretary(Employee, SecretaryRole, SalaryPolicy):
-    pass
+    """Secretary class"""
+
 
 @dataclass
 class SalesPerson(Employee, SalesRole, CommissionPolicy):
-    pass
+    """Sales person class"""
+
 
 @dataclass
 class FactoryWorker(Employee, FactoryRole, HourlyPolicy):
-    pass
+    """Factory worker class"""
+
 
 @dataclass
 class TemporarySecretary(Employee, SecretaryRole, HourlyPolicy):
-    pass
+    """Temporary Secretary class"""
